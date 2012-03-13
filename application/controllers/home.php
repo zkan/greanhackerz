@@ -2,8 +2,16 @@
 
 class Home extends CI_Controller {
 
+    function __construct() {
+        parent::__construct();
+
+        $this->load->database();
+        $this->load->helper('url');
+    }
+
     function index() {
-        $this->load->view('home');
+        $data['query'] = $this->db->get('items');
+        $this->load->view('home', $data);
     }
 
 }

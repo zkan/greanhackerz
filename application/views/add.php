@@ -8,18 +8,14 @@
 
 <div id='container'>
     <b>Grean Hackerz</b><br />
-    <?=anchor('item', 'Add new item');?>
+    <?=anchor('home', 'Back');?>
     <div id='body'>
-        <? $count = 1; ?>
-        <? foreach($query->result() as $row): ?>
-            <div class='item'>
-                <div class='numbering'><?=$count?></div>
-                <div class='link'><a href='<?=$row->link?>'><?=$row->name?></a></div> 
-                <div class='description'><?=$row->description?></div>
-                <div class='taglist'>Tag1 Tag2 Tag3</div>
-            </div>
-        <? $count++; ?>
-        <? endforeach; ?>
+        <?=form_open('item/add');?>
+            Name: <input type='text' name='name' /><br />
+            Link: <input type='text' name='link' /><br />
+            Description: <textarea name='description'></textarea><br />
+            <input type='submit' value='Add' />
+        </form>
     </div>
 </div>
 
