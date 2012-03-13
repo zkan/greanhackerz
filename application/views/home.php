@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="utf-8">
-  <title>ยินดีต้อนรับสู่เกรียนแฮกเกอร์</title>
+    <meta charset='utf-8'>
+    <title>Grean Hackerz</title>
 </head>
 <body>
 
-<div id="container">
+<div id='container'>
+    <b>Grean Hackerz</b><br/>
+    <a href='item/add'>Add</a>
+    <div id='body'>
+        <div class='item'>
+            <div class='numbering'>1.</div>
+            <div class='link'>Test</div> 
+            <div class='description'>Description</div>
+            <div class='taglist'>Tag1 Tag2 Tag3</div>
+        </div>
+    </div>
+</div>
+
+
+<!--div id="container">
 	<h1>Welcome to CodeIgniter! - ยินดีต้อนรับ</h1>
 
 	<div id="body">
@@ -22,7 +36,7 @@
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
-</div>
+</div-->
 
 </body>
 </html>
